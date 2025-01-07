@@ -24,6 +24,15 @@ class Mentor:
             return 'Ошибка'
 
 
+class Lecturer(Mentor):
+    def show(self):
+        print(f' Лектор с именем: {self.name}, фамилией: {self.surname}, на курсах: {self.courses_attached}')
+
+
+class Reviewer(Mentor):
+    pass
+
+
 best_student = Student('Ruoy', 'Eman', 'your_gender')
 best_student.courses_in_progress += ['Python']
 
